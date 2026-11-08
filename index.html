@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanu Sri Khandesh — Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ============ CURSOR GLOW ============ -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ============ NAVIGATION ============ -->
+<nav class="nav" id="nav">
+    <a href="#" class="nav__logo">
+        <span class="nav__logo-bracket">&lt;</span>TSK<span class="nav__logo-bracket"> /&gt;</span>
+    </a>
+    <div class="nav__links">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#experience" class="nav__link">Experience</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#contact" class="nav__link">Contact</a>
+    </div>
+    <a href="#contact" class="nav__cta">Let's Talk</a>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-menu__link">About</a>
+    <a href="#experience" class="mobile-menu__link">Experience</a>
+    <a href="#projects" class="mobile-menu__link">Projects</a>
+    <a href="#skills" class="mobile-menu__link">Skills</a>
+    <a href="#contact" class="mobile-menu__link">Contact</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+    <canvas id="particleCanvas" class="hero__canvas"></canvas>
+    <div class="hero__content">
+        <div class="hero__photo reveal">
+            <img src="assets/profile.jpg" alt="Thanu Sri Khandesh" />
+        </div>
+        <div class="hero__badge reveal">Software Engineer</div>
+        <h1 class="hero__title reveal">
+            Hi, I'm <span class="hero__name">Thanu Sri</span>
+        </h1>
+        <p class="hero__subtitle reveal">
+            I build diagnostic platforms, backend systems, and AI-integrated tooling at
+            <span class="hero__highlight">Microsoft</span>.
+        </p>
+        <div class="hero__stats reveal">
+            <div class="stat">
+                <span class="stat__number" data-target="8.5">0</span><span class="stat__suffix">x</span>
+                <span class="stat__label">Faster Detections</span>
+            </div>
+            <div class="stat">
+                <span class="stat__number" data-target="25">0</span><span class="stat__suffix">+</span>
+                <span class="stat__label">Vulns Remediated</span>
+            </div>
+            <div class="stat">
+                <span class="stat__number" data-target="54">0</span><span class="stat__suffix">%</span>
+                <span class="stat__label">Execution Reduced</span>
+            </div>
+            <div class="stat">
+                <span class="stat__number" data-target="39">0</span><span class="stat__suffix">+</span>
+                <span class="stat__label">Automated Tests</span>
+            </div>
+        </div>
+        <div class="hero__actions reveal">
+            <a href="#projects" class="btn btn--primary">
+                <span>View My Work</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--outline">Get In Touch</a>
+        </div>
+    </div>
+    <div class="hero__scroll">
+        <div class="hero__scroll-line"></div>
+        <span>Scroll</span>
+    </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+    <div class="container">
+        <div class="section__header reveal">
+            <span class="section__number">01</span>
+            <h2 class="section__title">About Me</h2>
+            <div class="section__line"></div>
+        </div>
+        <div class="about__grid about__grid--with-photo">
+            <div class="about__portrait reveal">
+                <div class="about__portrait-frame">
+                    <img src="assets/profile.jpg" alt="Thanu Sri Khandesh" />
+                </div>
+            </div>
+            <div class="about__text reveal">
+                <p class="about__lead">
+                    I'm a software engineer who cares about understanding <em>why</em> something is broken
+                    before writing a single line of code.
+                </p>
+                <p>
+                    At Microsoft, I work on the <strong>Windows Get Help</strong> team — the diagnostic and
+                    troubleshooting infrastructure behind Windows support. My work spans compiled-language
+                    migration, REST API design, full-stack platform tooling, security hardening, and
+                    connecting legacy systems to modern AI interfaces.
+                </p>
+                <p>
+                    I've migrated diagnostic modules achieving <strong>8.5x performance improvements</strong>,
+                    remediated <strong>25+ security vulnerabilities</strong> across production packages, built a
+                    full-stack rollout system, and designed an <strong>MCP server</strong> that lets AI agents
+                    invoke Windows troubleshooters.
+                </p>
+                <p>
+                    My approach: understand the existing system, find what's actually broken,
+                    implement a safe fix, and validate whether it worked. Measurable outcomes, not assumptions.
+                </p>
+            </div>
+            <div class="about__info reveal">
+                <div class="about__card">
+                    <div class="about__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <div>
+                        <h4>Name</h4>
+                        <p>Thanu Sri Khandesh</p>
+                    </div>
+                </div>
+                <div class="about__card">
+                    <div class="about__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    </div>
+                    <div>
+                        <h4>Role</h4>
+                        <p>Software Engineer @ Microsoft</p>
+                    </div>
+                </div>
+                <div class="about__card">
+                    <div class="about__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Hyderabad, India</p>
+                    </div>
+                </div>
+                <div class="about__card">
+                    <div class="about__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c6 3 10 0 12-1v-4"/></svg>
+                    </div>
+                    <div>
+                        <h4>Education</h4>
+                        <p>B.Tech CS — CGPA 7.9/10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section experience" id="experience">
+    <div class="container">
+        <div class="section__header reveal">
+            <span class="section__number">02</span>
+            <h2 class="section__title">Experience</h2>
+            <div class="section__line"></div>
+        </div>
+        <div class="timeline">
+            <!-- Microsoft -->
+            <div class="timeline__item reveal">
+                <div class="timeline__dot"></div>
+                <div class="timeline__content">
+                    <div class="timeline__header">
+                        <div>
+                            <h3 class="timeline__role">Software Engineer</h3>
+                            <p class="timeline__company">Microsoft — Windows Get Help / Windows Servicing and Delivery</p>
+                        </div>
+                        <span class="timeline__date">Nov 2025 — Present</span>
+                    </div>
+                    <ul class="timeline__list">
+                        <li>Migrated 13 Bluetooth diagnostic modules from PowerShell to C#/.NET — <strong>8.5x faster detections</strong>, <strong>54% execution time reduction</strong></li>
+                        <li>Built versioned package-rollout system with ASP.NET Core, CosmosDB, Azure Blob Storage</li>
+                        <li>Designed MCP server exposing Windows troubleshooters as structured AI tools</li>
+                        <li>Architected RAG pipeline with Azure AI Search and on-device SLM inference</li>
+                        <li>Remediated <strong>25+ high-severity security vulnerabilities</strong> across 6 packages</li>
+                        <li>Analyzed Camera customer cases (15.7%), implemented stream-health diagnostics</li>
+                        <li>Recovered broken internal portal; implemented team-level authorization</li>
+                    </ul>
+                    <div class="timeline__tags">
+                        <span>C#</span><span>.NET</span><span>ASP.NET Core</span><span>CosmosDB</span>
+                        <span>AngularJS</span><span>MCP</span><span>RAG</span><span>Azure</span><span>PowerShell</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Bluestock -->
+            <div class="timeline__item reveal">
+                <div class="timeline__dot"></div>
+                <div class="timeline__content">
+                    <div class="timeline__header">
+                        <div>
+                            <h3 class="timeline__role">Software Developer Intern</h3>
+                            <p class="timeline__company">Bluestock</p>
+                        </div>
+                        <span class="timeline__date">Jul 2024 — Aug 2024</span>
+                    </div>
+                    <ul class="timeline__list">
+                        <li>Built distributed microservices using Golang and Python with event-driven pipelines</li>
+                        <li>Automated CI/CD using Docker and Kubernetes</li>
+                    </ul>
+                    <div class="timeline__tags">
+                        <span>Go</span><span>Python</span><span>Docker</span><span>Kubernetes</span><span>CI/CD</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Education -->
+            <div class="timeline__item reveal">
+                <div class="timeline__dot"></div>
+                <div class="timeline__content">
+                    <div class="timeline__header">
+                        <div>
+                            <h3 class="timeline__role">B.Tech in Computer Science</h3>
+                            <p class="timeline__company">CMR College of Engineering and Technology, Hyderabad</p>
+                        </div>
+                        <span class="timeline__date">2021 — 2025</span>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-top: 0.5rem;">CGPA: 7.9/10 — Coursework: DSA, OS, Distributed Systems, Networks, Databases</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section projects" id="projects">
+    <div class="container">
+        <div class="section__header reveal">
+            <span class="section__number">03</span>
+            <h2 class="section__title">Projects</h2>
+            <div class="section__line"></div>
+        </div>
+
+        <!-- Featured Project 1 -->
+        <div class="project project--featured reveal">
+            <div class="project__image">
+                <div class="project__image-placeholder">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                    </svg>
+                    <span>8.5x Faster</span>
+                </div>
+            </div>
+            <div class="project__info">
+                <span class="project__label">Featured Project</span>
+                <h3 class="project__title">Bluetooth Diagnostic Platform Modernization</h3>
+                <div class="project__desc">
+                    <p>Migrated 13 Bluetooth troubleshooting modules from PowerShell runspace-based execution to compiled C#/.NET assemblies. Replaced complex RunspacePool management with a thin wrapper that loads compiled DLLs and invokes typed runners.</p>
+                    <p>Converted synchronous telemetry (15-20s blocking) to non-blocking async. Built 24 C# detection + action projects with NuGet pipeline integration. Validated through 39+ automated tests with zero behavioral regressions.</p>
+                </div>
+                <div class="project__metrics">
+                    <div class="metric">
+                        <span class="metric__value">8.5x</span>
+                        <span class="metric__label">Faster Detections</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric__value">54%</span>
+                        <span class="metric__label">Time Reduced</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric__value">39+</span>
+                        <span class="metric__label">Tests Written</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric__value">24</span>
+                        <span class="metric__label">C# Projects</span>
+                    </div>
+                </div>
+                <div class="project__tags">
+                    <span>C#</span><span>.NET</span><span>PowerShell</span><span>NuGet</span><span>CI/CD</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Project 2 -->
+        <div class="project project--featured project--reverse reveal">
+            <div class="project__image">
+                <div class="project__image-placeholder project__image-placeholder--ai">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2a4 4 0 0 1 4 4v2h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2v2a4 4 0 0 1-8 0v-2H6a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h2V6a4 4 0 0 1 4-4z"/>
+                        <circle cx="9" cy="10" r="1" fill="currentColor"/><circle cx="15" cy="10" r="1" fill="currentColor"/>
+                    </svg>
+                    <span>MCP + RAG</span>
+                </div>
+            </div>
+            <div class="project__info">
+                <span class="project__label">Featured Project</span>
+                <h3 class="project__title">MCP Server & RAG-Based Intelligent Diagnostics</h3>
+                <div class="project__desc">
+                    <p>Designed and built an MCP server that exposes Windows troubleshooters as structured tools for language models — enabling AI agents to discover, invoke, and orchestrate multi-step diagnostic workflows with parameter validation and permission-scoped access.</p>
+                    <p>Architected a RAG pipeline using Azure AI Search with document ingestion, chunking, vector indexing, and on-device SLM inference for privacy-preserving diagnostics.</p>
+                </div>
+                <div class="project__tags">
+                    <span>MCP</span><span>C#</span><span>RAG</span><span>Azure AI Search</span><span>SLM</span><span>Vector Search</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="project-grid">
+            <!-- Camera -->
+            <div class="project-card reveal" data-project="camera">
+                <div class="project-card__header">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                    <span class="project-card__arrow">&#8599;</span>
+                </div>
+                <h4 class="project-card__title">Camera Stream-Health Diagnostics</h4>
+                <p class="project-card__desc">Analyzed 15.7% of Camera CSS cases. Found the troubleshooter detected devices but couldn't verify video output. Implemented MediaCapture-based stream probing with before/after remediation verification.</p>
+                <div class="project-card__metrics">
+                    <span>15.7% of cases</span><span>7 sub-scenarios</span>
+                </div>
+                <div class="project-card__tags">
+                    <span>C#</span><span>MediaCapture</span><span>WMI</span><span>PowerShell</span>
+                </div>
+            </div>
+
+            <!-- Rollout -->
+            <div class="project-card reveal" data-project="rollout">
+                <div class="project-card__header">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg>
+                    <span class="project-card__arrow">&#8599;</span>
+                </div>
+                <h4 class="project-card__title">Versioned Package Rollout System</h4>
+                <p class="project-card__desc">Full-stack rollout system with percentage-based traffic allocation, ETag-based optimistic concurrency, version management, and role-based authorization with server-side validation.</p>
+                <div class="project-card__metrics">
+                    <span>Full-Stack</span><span>Production</span>
+                </div>
+                <div class="project-card__tags">
+                    <span>AngularJS</span><span>ASP.NET Core</span><span>CosmosDB</span><span>Azure Blob</span>
+                </div>
+            </div>
+
+            <!-- Security -->
+            <div class="project-card reveal" data-project="security">
+                <div class="project-card__header">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span class="project-card__arrow">&#8599;</span>
+                </div>
+                <h4 class="project-card__title">Security Remediation at Scale</h4>
+                <p class="project-card__desc">Remediated 25+ high-severity vulnerabilities across six Windows diagnostic packages. Query sanitization, P/Invoke hardening, native exit-code validation, rollback protection.</p>
+                <div class="project-card__metrics">
+                    <span>25+ vulns</span><span>6 packages</span>
+                </div>
+                <div class="project-card__tags">
+                    <span>Security</span><span>P/Invoke</span><span>WMI</span><span>PowerShell</span>
+                </div>
+            </div>
+
+            <!-- Catalog -->
+            <div class="project-card reveal" data-project="catalog">
+                <div class="project-card__header">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                    <span class="project-card__arrow">&#8599;</span>
+                </div>
+                <h4 class="project-card__title">Support Actions Catalog Recovery</h4>
+                <p class="project-card__desc">Diagnosed and fixed simultaneous portal failures — dead telemetry, deleted app registration, blocked CSP. Implemented team-level authorization for package management.</p>
+                <div class="project-card__metrics">
+                    <span>Multi-failure fix</span><span>Auth system</span>
+                </div>
+                <div class="project-card__tags">
+                    <span>AngularJS</span><span>Node.js</span><span>Azure AD</span>
+                </div>
+            </div>
+
+            <!-- Job Scheduler -->
+            <div class="project-card reveal" data-project="scheduler">
+                <div class="project-card__header">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    <span class="project-card__arrow">&#8599;</span>
+                </div>
+                <h4 class="project-card__title">Distributed Job Scheduling Platform</h4>
+                <p class="project-card__desc">Asynchronous job processing with worker pools, Redis queues, PostgreSQL job-state persistence, retries, dead-letter handling, and Docker containerization.</p>
+                <div class="project-card__metrics">
+                    <span>Academic</span><span>Distributed</span>
+                </div>
+                <div class="project-card__tags">
+                    <span>Go</span><span>Redis</span><span>PostgreSQL</span><span>Docker</span>
+                </div>
+            </div>
+
+            <!-- Kafka -->
+            <div class="project-card reveal" data-project="kafka">
+                <div class="project-card__header">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    <span class="project-card__arrow">&#8599;</span>
+                </div>
+                <h4 class="project-card__title">Real-Time Event Processing Pipeline</h4>
+                <p class="project-card__desc">Kafka-based event pipeline for real-time data ingestion with fault-tolerant consumer groups, monitoring, and structured logging.</p>
+                <div class="project-card__metrics">
+                    <span>Academic</span><span>Real-Time</span>
+                </div>
+                <div class="project-card__tags">
+                    <span>Python</span><span>Apache Kafka</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section skills" id="skills">
+    <div class="container">
+        <div class="section__header reveal">
+            <span class="section__number">04</span>
+            <h2 class="section__title">Skills & Tech</h2>
+            <div class="section__line"></div>
+        </div>
+        <div class="skills__grid">
+            <div class="skill-group reveal">
+                <h4 class="skill-group__title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    Languages
+                </h4>
+                <div class="skill-group__items">
+                    <div class="skill-pill">C#</div>
+                    <div class="skill-pill">Python</div>
+                    <div class="skill-pill">Go</div>
+                    <div class="skill-pill">Java</div>
+                    <div class="skill-pill">C++</div>
+                    <div class="skill-pill">TypeScript</div>
+                    <div class="skill-pill">JavaScript</div>
+                    <div class="skill-pill">SQL</div>
+                    <div class="skill-pill">PowerShell</div>
+                </div>
+            </div>
+            <div class="skill-group reveal">
+                <h4 class="skill-group__title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    Backend & Web
+                </h4>
+                <div class="skill-group__items">
+                    <div class="skill-pill">ASP.NET Core</div>
+                    <div class="skill-pill">REST APIs</div>
+                    <div class="skill-pill">AngularJS</div>
+                    <div class="skill-pill">Node.js</div>
+                    <div class="skill-pill">Microservices</div>
+                    <div class="skill-pill">HTML/CSS</div>
+                </div>
+            </div>
+            <div class="skill-group reveal">
+                <h4 class="skill-group__title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                    Data & Cloud
+                </h4>
+                <div class="skill-group__items">
+                    <div class="skill-pill">CosmosDB</div>
+                    <div class="skill-pill">PostgreSQL</div>
+                    <div class="skill-pill">Redis</div>
+                    <div class="skill-pill">Apache Kafka</div>
+                    <div class="skill-pill">Azure Blob Storage</div>
+                    <div class="skill-pill">Azure Service Fabric</div>
+                    <div class="skill-pill">Docker</div>
+                    <div class="skill-pill">Kubernetes</div>
+                </div>
+            </div>
+            <div class="skill-group reveal">
+                <h4 class="skill-group__title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 1 4 4v2h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2v2a4 4 0 0 1-8 0v-2H6a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h2V6a4 4 0 0 1 4-4z"/></svg>
+                    AI & ML
+                </h4>
+                <div class="skill-group__items">
+                    <div class="skill-pill skill-pill--accent">MCP</div>
+                    <div class="skill-pill skill-pill--accent">RAG</div>
+                    <div class="skill-pill skill-pill--accent">LLMs / SLMs</div>
+                    <div class="skill-pill skill-pill--accent">Azure AI Search</div>
+                    <div class="skill-pill skill-pill--accent">Vector Search</div>
+                    <div class="skill-pill skill-pill--accent">On-Device Inference</div>
+                </div>
+            </div>
+            <div class="skill-group reveal">
+                <h4 class="skill-group__title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                    Engineering
+                </h4>
+                <div class="skill-group__items">
+                    <div class="skill-pill">Distributed Systems</div>
+                    <div class="skill-pill">Performance Optimization</div>
+                    <div class="skill-pill">Security Hardening</div>
+                    <div class="skill-pill">CI/CD</div>
+                    <div class="skill-pill">Azure DevOps</div>
+                    <div class="skill-pill">Git</div>
+                    <div class="skill-pill">Unit & Integration Testing</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+    <div class="container">
+        <div class="section__header reveal">
+            <span class="section__number">05</span>
+            <h2 class="section__title">Get In Touch</h2>
+            <div class="section__line"></div>
+        </div>
+        <div class="contact__content reveal">
+            <p class="contact__lead">
+                I'm currently exploring new opportunities in backend engineering,
+                distributed systems, and AI-integrated applications. If you'd like
+                to work together or just say hi, I'd love to hear from you.
+            </p>
+            <a href="mailto:thanu2624@gmail.com" class="btn btn--primary btn--large">
+                <span>Say Hello</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+            <div class="contact__links">
+                <a href="mailto:thanu2624@gmail.com" class="contact__link" aria-label="Email">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/khandesh-thanu-sri-476889227/" target="_blank" class="contact__link" aria-label="LinkedIn">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="https://github.com/thanu262404" target="_blank" class="contact__link" aria-label="GitHub">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+                <a href="https://leetcode.com/u/thanu_2004/" target="_blank" class="contact__link" aria-label="LeetCode">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l2-2M8 6l-2 2M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+    <div class="container">
+        <p>Built by Thanu Sri Khandesh</p>
+    </div>
+</footer>
+
+<!-- ============ PROJECT MODAL ============ -->
+<div class="modal" id="projectModal">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+        <button class="modal__close" aria-label="Close">&times;</button>
+        <div class="modal__body" id="modalBody"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
